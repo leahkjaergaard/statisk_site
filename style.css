@@ -1,0 +1,172 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background-color: white;
+  list-style: none;
+  line-height: 1.5rem;
+}
+
+main {
+  display: grid;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.2rem;
+  gap: 10px;
+}
+
+footer a {
+  font-size: 1rem;
+  gap: 10px;
+}
+
+/* TEKST START*/
+h1 {
+  font-family: "Lato", sans-serif;
+  color: black;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+  color: black;
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  color: black;
+  font-size: 1rem;
+}
+
+a {
+  font-family: "Lato", sans-serif;
+  color: black;
+  font-size: 1rem;
+}
+
+/*Kategorier*/
+
+.kategorier {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.kategorier a {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 4rem;
+  padding: 0;
+}
+
+ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+a {
+  font-family: "Inria Sans", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: block;
+  color: #323471;
+}
+
+a li {
+  font-family: "Inria Sans", sans-serif;
+  color: #f27405;
+  font-size: 4rem;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+a:hover {
+  color: #0c51dd;
+  text-decoration-color: #0c51dd;
+}
+
+@media (min-width: 800px) {
+  .productlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8rem;
+  }
+
+  /*product */
+
+  .product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .purchaseBox {
+    background-color: #92a1c2;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  dt {
+    font-weight: bold;
+    line-height: 2rem;
+  }
+
+  .purchaseBox h2 {
+    color: #333;
+  }
+
+  #size {
+    padding: 8px;
+    margin-right: 10px;
+  }
+
+  .add-to-basket-btn {
+    padding: 10px 20px;
+    background-color: #5d8097;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .add-to-basket-btn:hover {
+    background-color: #007bb5;
+  }
+
+  .smallProduct_SoldOut {
+    opacity: 1;
+  }
+}
