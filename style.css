@@ -103,13 +103,11 @@ a {
   font-family: "Inria Sans", sans-serif;
   font-size: 1.2rem;
   text-decoration: none;
-  display: block;
-  color: #323471;
+  color: #007193;
 }
 
 a li {
   font-family: "Inria Sans", sans-serif;
-  color: #f27405;
   font-size: 4rem;
   text-decoration: none;
   display: block;
@@ -117,8 +115,24 @@ a li {
 }
 
 a:hover {
-  color: #0c51dd;
-  text-decoration-color: #0c51dd;
+  color: black;
+  text-decoration-color: black;
+}
+
+.knap {
+  text-align: center;
+  border: 1px solid #007193;
+  display: inline-block;
+  margin-bottom: 20px;
+  background-color: #f2f0eb;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  padding: 12px 20px;
+}
+
+.knap_container {
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 800px) {
@@ -175,5 +189,28 @@ a:hover {
 
   .smallProduct_SoldOut {
     opacity: 1;
+  }
+
+  /* BRØDKRUMMESTIL */
+
+  ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    text-align: center;
+  }
+
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 1rem;
+  }
+
+  ul.breadcrumb li + li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+
+  ul.breadcrumb li a {
+    font-size: 1rem;
   }
 }

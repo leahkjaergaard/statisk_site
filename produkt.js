@@ -7,8 +7,21 @@ fetch("https://kea-alt-del.dk/t7/api/products/" + id)
 
 function showProduct(product) {
   console.log(product);
-  document.querySelector(".purchaseBox h3").textContent = product.productdisplayname;
-  document.querySelector(".purchaseBox .size").textContent = product.brandname;
+
+  document.querySelector(".breadcrumb .bread_category").textContent = product.category;
+  document.querySelector(".breadcrumb .bread_subcategory").textContent = product.subcategory;
+  document.querySelector(".breadcrumb .productdisplayname").textContent = product.productdisplayname;
+
+  document.querySelector(".info h2").textContent = product.productdisplayname;
+  document.querySelector(".info .brand").textContent = product.brandname;
+  document.querySelector(".info .articletype").textContent = product.articletype;
+  document.querySelector(".info .price").textContent = product.price;
+  document.querySelector(".info .color").textContent = product.color;
+  document.querySelector(".info .brandbio").textContent = product.brandbio;
+  document.querySelector(".info .gender").textContent = product.gender;
+  document.querySelector(".info .season").textContent = product.season;
+  document.querySelector(".info .id").textContent = product.id;
+
   document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 }
 
