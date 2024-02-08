@@ -1,13 +1,9 @@
-const urlParams = new URLSearchParams(window.location.search);
-const id = urlParams.get("id");
-
 fetch("https://kea-alt-del.dk/t7/api/categories")
   .then((res) => res.json())
   .then(showCategories);
 
 function showCategories(cats) {
   cats.forEach(showCategory);
-  console.log("hvad fanden er cats: ", cats);
 }
 
 function showCategory(cat) {
