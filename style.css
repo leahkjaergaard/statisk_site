@@ -18,9 +18,14 @@ body {
 }
 
 main {
-  display: grid;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.produktliste main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 footer {
@@ -46,12 +51,14 @@ h1 {
   font-family: "Lato", sans-serif;
   color: black;
   font-size: 2rem;
+  line-height: 2;
 }
 
 h2 {
   font-family: "Lato", sans-serif;
   color: black;
   font-size: 1.5rem;
+  line-height: 2;
 }
 
 p {
@@ -130,7 +137,7 @@ a:hover {
   }
 
   .purchaseBox {
-    background-color: #92a1c2;
+    background-color: #a9b5d042;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;

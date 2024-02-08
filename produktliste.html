@@ -20,7 +20,7 @@
     <title>document</title>
 </head>
 
-<body>
+<body class="produktliste">
     <header>
 
         <div class="logo">
@@ -31,7 +31,6 @@
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="produkt.html">Produkt</a></li>
-                <li><a href="produktliste.html">Produktliste</a></li>
                 <li><a href="kategori.html">Kategori</a></li>
             </ul>
             <div class="burger">
@@ -41,12 +40,9 @@
             </div>
         </nav>
 
-
-
     </header>
     <main>
-        <h2>Sporting Goods</h2>
-        <template class="smallProductTemplate">
+        <template id="smallProductTemplate">
             <article class="smallProduct">
                 <img src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp"
                     alt="Sahara Team India Fanwear Round Neck Jersey">
@@ -57,13 +53,11 @@
                     <p>Now DKK 1560,-</p>
                     <p> -34%</p>
                 </div>
-                <a href="produkt.html">Read More</a>
+                <a class="read-more" href="produkt.html">Read More</a>
             </article>
         </template>
 
-
-
-        <article class="smallProduct SoldOut">
+        <!-- <article class="smallProduct SoldOut">
             <img src="https://kea-alt-del.dk/t7/images/webp/640/1553.webp"
                 alt="Sahara Team India Fanwear Round Neck Jersey" />
             <h3>Power Cat Hard Ground Football</h3>
@@ -116,7 +110,7 @@
                 <p>-34%</p>
             </div>
             <a href="produkt.html">Read More</a>
-        </article>
+        </article> -->
     </main>
 
     <footer>
